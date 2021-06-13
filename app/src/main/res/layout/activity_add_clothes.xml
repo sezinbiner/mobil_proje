@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddClothesActivity">
+
+    <ImageView
+        android:id="@+id/imageviewClothes"
+        android:layout_width="238dp"
+        android:layout_height="280dp"
+        android:src="@drawable/signup" />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textSize="18sp"
+        android:layout_below="@id/imageviewClothes"
+        android:background="@drawable/custom_input"
+        android:hint="Kıyafet Türü" />
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/type"
+        android:hint="Renk" />
+
+    <EditText
+        android:id="@+id/pattern"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textSize="18sp"
+        android:layout_below="@id/color"
+        android:background="@drawable/custom_input"
+        android:hint="Desen" />
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:inputType="date"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/pattern"
+        android:hint="Tarih" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="12dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/date"
+        android:inputType="numberDecimal"
+        android:hint="Fiyat" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSaveClothes"
+        android:layout_below="@id/price"
+        android:background="@drawable/custom_button"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="Kaydet" />
+
+    <Button
+        android:id="@+id/addPhoto"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Fotoğraf Ekle"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageviewClothes"/>
+
+
+</android.widget.RelativeLayout>

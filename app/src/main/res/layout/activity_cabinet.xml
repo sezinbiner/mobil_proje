@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CabinetActivity">
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_marginTop="60dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/signup" />
+
+    <TextView
+        android:id="@+id/headText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/head"
+        android:layout_weight="1"
+        android:text="Başüstü" />
+
+    <Button
+        android:id="@+id/headbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@id/headText"
+        android:text="Fotoğraf Ekle" />
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/signup"
+        android:layout_below="@id/head"/>
+
+    <TextView
+        android:id="@+id/faceText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@id/face"
+        android:layout_weight="1"
+        android:text="Yüz" />
+
+    <Button
+        android:id="@+id/facebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="180dp"
+        android:layout_toRightOf="@id/faceText"
+        android:text="Fotoğraf Ekle" />
+
+    <ImageView
+        android:id="@+id/legs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/signup"
+        android:layout_below="@id/body"/>
+
+    <TextView
+        android:id="@+id/legsText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bodyText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="79dp"
+        android:layout_toRightOf="@id/legs"
+        android:layout_weight="1"
+        android:text="Alt Beden" />
+
+    <Button
+        android:id="@+id/legsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bodybutton"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="51dp"
+        android:layout_toRightOf="@id/legsText"
+        android:text="Fotoğraf Ekle" />
+
+    <ImageView
+        android:id="@+id/feet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/signup"
+        android:layout_below="@id/legs"/>
+
+    <TextView
+        android:id="@+id/feetText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/legsText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="75dp"
+        android:layout_toRightOf="@id/feet"
+        android:layout_weight="1"
+        android:text="Ayak" />
+
+
+    <Button
+        android:id="@+id/feetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/legsbutton"
+        android:layout_marginLeft="50dp"
+
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@id/headText"
+        android:text="Fotoğraf Ekle" />
+
+    <ImageView
+        android:id="@+id/body"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/signup"
+        android:layout_below="@id/face"/>
+
+    <TextView
+        android:id="@+id/bodyText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/faceText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="73dp"
+        android:layout_toRightOf="@id/body"
+        android:layout_weight="1"
+        android:text="Üst Beden" />
+
+    <Button
+        android:id="@+id/bodybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebutton"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="58dp"
+        android:layout_toRightOf="@id/headText"
+        android:text="Fotoğraf Ekle" />
+
+    <EditText
+        android:id="@+id/combineNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Kombin İsmi" />
+
+    <Button
+        android:id="@+id/saveCombine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feetbutton"
+
+        android:layout_marginTop="62dp"
+        android:text="Kaydet" />
+
+
+</android.widget.RelativeLayout>

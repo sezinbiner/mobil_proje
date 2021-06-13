@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowCombineActivity">
+
+    <ImageView
+        android:id="@+id/head2"
+        android:layout_marginTop="50dp"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:src="@drawable/signup" />
+
+    <TextView
+        android:id="@+id/headText2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@id/head2"
+        android:layout_weight="1"
+        android:text="Kafa" />
+
+
+    <ImageView
+        android:id="@+id/face2"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:src="@drawable/signup"
+        android:layout_below="@id/head2"/>
+
+    <TextView
+        android:id="@+id/faceText2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@id/face2"
+        android:layout_weight="1"
+        android:text="Yüz" />
+
+
+    <ImageView
+        android:id="@+id/legs2"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:src="@drawable/signup"
+        android:layout_below="@id/body2"/>
+
+    <TextView
+        android:id="@+id/legsText2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bodyText2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@id/legs2"
+        android:layout_weight="1"
+        android:text="Alt" />
+
+
+    <ImageView
+        android:id="@+id/feet2"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:src="@drawable/signup"
+        android:layout_below="@id/legs2"/>
+
+    <TextView
+        android:id="@+id/feetText2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/legsText2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_toRightOf="@id/feet2"
+        android:layout_weight="1"
+        android:text="Ayak" />
+
+
+
+
+    <ImageView
+        android:id="@+id/body2"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:src="@drawable/signup"
+        android:layout_below="@id/face2"/>
+
+    <TextView
+        android:id="@+id/bodyText2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/faceText2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/body2"
+        android:layout_weight="1"
+        android:text="Üst" />
+
+
+
+    <EditText
+        android:id="@+id/combineNameTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Kombin İsmi" />
+
+    <Button
+        android:id="@+id/deleteCombine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="265dp"
+        android:text="Sil" />
+
+
+</android.widget.RelativeLayout>
